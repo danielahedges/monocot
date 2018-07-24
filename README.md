@@ -59,16 +59,16 @@ Other cloud providers are similar.
 ## Customization
 
 1. In `README.md`:
-  * Update the project name at the top.
-  * Get new badges from shippable and update them.
-  * Update the image name in the `docker image build` command.
+    * Update the project name at the top.
+    * Get new badges from shippable and update them.
+    * Update the image name in the `docker image build` command.
 1. In `Makefile`:
-  * Update the docker image name.
+    * Update the docker image name.
 1. In `docker-compose.yml`:
-  * Update the image name in `staging-deps` section.
+    * Update the image name in `staging-deps` section.
 1. In `package.json`:
-  * Update name, version, description, repository url.
-  * Update build image name in the `build` script.
+    * Update name, version, description, repository url.
+    * Update build image name in the `build` script.
 1. Update all config files in `src/core/server/confing/env` with the new db name.
 1. Update the title in `src/core/server/controllers/index.server.core.ctrl.js`.
 1. Update the test with the new title in
