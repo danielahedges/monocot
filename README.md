@@ -50,8 +50,35 @@ Other cloud providers are similar.
 1. Create a mongodb instance. [mLab](https://mlab.com) is a good resource.
 1. Create a [heroku app instance](https://dashboard.heroku.com/apps).
 1. Put the mongo connection string into the environment variable
-   `MONGODB_CONNECT` using the following command: `heroku config:set
-   MONGODB_CONNECT=[mongo_connect_url]`.
+   `MONGODB_CONNECT` using the following command: `heroku config:set MONGODB_CONNECT=[mongo_connect_url]`.
 1. Set `NODE_ENV`: `heroku config:set NODE_ENV=development`.
 1. Deploy by following the instructions in your heroku app dashboard. (You will
    add heroku to the git remotes, then push to it).
+
+## Customization
+
+1. In `README.md`:
+
+* Update the project name at the top.
+* Get new badges from shippable and update them.
+* Update the image name in the `docker image build` command.
+
+1. In `Makefile`:
+
+* Update the docker image name.
+
+1. In `docker-compose.yml`:
+
+* Update the image name in `staging-deps` section.
+
+1. In `package.json`:
+
+* Update name, version, description, repository url.
+* Update build image name in the `build` script.
+
+1. Update all config files in `src/core/server/confing/env` with the new db name.
+1. Update the title in `src/core/server/controllers/index.server.core.ctrl.js`.
+1. Update the test with the new title in
+   `src/core/server/controllers/test/index.server.core.ctrl.spec.js`.
+1. Pick a better color for the nav bar in `src/core/views/layout.pug`.
+
